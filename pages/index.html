@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Auth System</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+
+</head>
+
+<body>
+
+  <main class="container">
+
+    <section class="auth-card">
+
+      <!-- HEADER -->
+
+      <div class="auth-header">
+
+        <h1>BackendShop</h1>
+
+        <p>
+          Sistema de autenticação
+        </p>
+
+      </div>
+
+      <!-- TABS -->
+
+      <div class="auth-tabs">
+
+        <button
+          class="tab-button active"
+          id="loginTab"
+        >
+          Login
+        </button>
+
+        <button
+          class="tab-button"
+          id="registerTab"
+        >
+          Registrar
+        </button>
+
+      </div>
+
+      <!-- LOGIN FORM -->
+
+      <form
+        id="loginForm"
+        class="auth-form active"
+      >
+
+        <div class="input-group">
+
+          <label for="loginEmail">
+            E-mail
+          </label>
+
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Digite seu e-mail"
+            required
+          />
+
+        </div>
+
+        <div class="input-group">
+
+          <label for="loginPassword">
+            Senha
+          </label>
+
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Digite sua senha"
+            required
+          />
+
+        </div>
+
+        <button
+          type="submit"
+          class="btn-primary"
+          id="loginButton"
+        >
+          Entrar
+        </button>
+
+      </form>
+
+      <!-- REGISTER FORM -->
+
+      <form
+        id="registerForm"
+        class="auth-form"
+      >
+
+        <div class="input-group">
+
+          <label for="registerName">
+            Nome
+          </label>
+
+          <input
+            type="text"
+            id="registerName"
+            placeholder="Digite seu nome"
+            required
+          />
+
+        </div>
+
+        <div class="input-group">
+
+          <label for="registerEmail">
+            E-mail
+          </label>
+
+          <input
+            type="email"
+            id="registerEmail"
+            placeholder="Digite seu e-mail"
+            required
+          />
+
+        </div>
+
+        <div class="input-group">
+
+          <label for="registerPassword">
+            Senha
+          </label>
+
+          <input
+            type="password"
+            id="registerPassword"
+            placeholder="Digite sua senha"
+            required
+          />
+
+        </div>
+
+        <button
+          type="submit"
+          class="btn-primary"
+          id="registerButton"
+        >
+          Criar conta
+        </button>
+
+      </form>
+
+      <!-- MESSAGE -->
+
+      <div id="message" class="message"></div>
+
+    </section>
+
+  </main>
+
+  <script
+    type="module"
+    src="../scripts/login.js"
+  ></script>
+
+</body>
+</html>
